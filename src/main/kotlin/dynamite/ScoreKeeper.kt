@@ -43,7 +43,7 @@ private val WATER_BALLOON: Map<Move, Int> = hashMapOf(
 )
 
 class Score(private var myScore: Int = 0, private var yourScore: Int = 0, private var pointsForRound: Int = 0) {
-  val results: Map<Move, Map<Move, Int>> = hashMapOf(
+  private val results: Map<Move, Map<Move, Int>> = hashMapOf(
     Move.R to ROCK,
     Move.P to PAPER,
     Move.S to SCISSORS,

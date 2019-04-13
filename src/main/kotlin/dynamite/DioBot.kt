@@ -2,16 +2,13 @@ package dynamite
 
 import com.softwire.dynamite.bot.Bot
 import com.softwire.dynamite.game.*
-import com.softwire.dynamite.runner.DynamiteRunner
-import com.softwire.dynamite.game.Round
 import kotlin.random.Random
 
-const val MAX_DYNAMITES = 100
-const val WINNING_SCORE = 1000
+const val MAX_DYNAMITES: Int = 100
 
-class DioBot(private var myDynamites: Int = MAX_DYNAMITES, private var yourDynamites: Int = MAX_DYNAMITES) : Bot {
-
-  private val guesstimator = Guesstimator()
+class DioBot(private var myDynamites: Int = MAX_DYNAMITES, private var yourDynamites: Int = MAX_DYNAMITES, private var draws: Int = 0) : Bot{
+  private val score = Score()
+  private val markov = MarkovChain()
 
   private fun checkDynamites(move: Move): Move {
     if (yourDynamites == 0 && move === Move.W) {
@@ -26,58 +23,42 @@ class DioBot(private var myDynamites: Int = MAX_DYNAMITES, private var yourDynam
   override fun makeMove(gamestate: Gamestate): Move {
     val currentRound = gamestate.rounds.size
 
-    if (currentRound > 0) {
+    if (currentRound > 1) {
       val lastRound = gamestate.rounds[currentRound - 1]
-      guesstimator.update(lastRound.p1, lastRound.p2)
+      update(gamestate, lastRound)
       if(lastRound.p1 === Move.D) myDynamites--
       if(lastRound.p2 === Move.D) yourDynamites--
     }
 
-    val nextMove = guesstimator.nextMove(gamestate)
+    if (currentRound < 2) return randomRPSMove()
+
+    val predictedMove = markov.nextMove(gamestate.rounds.last().p2)
+
+    val nextMove = beatPredictedMove(predictedMove)
 
     return checkDynamites(nextMove)
   }
 
+  fun update(gamestate: Gamestate, lastRound: Round) {
+    score.update(lastRound.p1, lastRound.p2)
+    markov.update(gamestate.rounds[gamestate.rounds.size - 2].p2, lastRound.p2)
+
+    draws = if (lastRound.p1 == lastRound.p2) draws + 1 else 0
+  }
 }
 
-class Guesstimator(var draws: Int = 0) {
+fun beatPredictedMove(yourMove: Move): Move {
+  val strategy = Random.nextFloat()
+  val useBalloon = 0.2f
+  val useDynamite = 0.8f
 
-  fun nextMove(gamestate: Gamestate): Move {
-//    Make random move on first turn
-    if (gamestate.rounds.size == 0) return randomMove()
-
-//    Beat a repeater bot
-    if (checkForRepeater(gamestate)) return counterRepeaterMove(gamestate.rounds[0].p2)
-
-    return randomMove()
+  return when (yourMove) {
+    Move.S -> if (strategy < useDynamite) return Move.R else Move.D
+    Move.R -> if (strategy < useDynamite) return Move.P else Move.D
+    Move.P -> if (strategy < useDynamite) return Move.S else Move.D
+    Move.D -> if (strategy < useBalloon) return Move.W else randomMove()
+    else   -> randomMove()
   }
-
-  fun update(myMove: Move, yourMove: Move) {
-//    This should use the planned scorer to decide when to change strategy
-
-    draws = if (myMove == yourMove) draws + 1 else 0
-  }
-
-  private fun checkForRepeater(gamestate: Gamestate): Boolean {
-    val yourFirstMove = gamestate.rounds[0].p2
-
-    for (i in gamestate.rounds.indices) {
-      if (gamestate.rounds[i].p2 !== yourFirstMove) return false
-    }
-
-    return true
-  }
-
-}
-
-// MOVES
-
-fun counterRepeaterMove(yourMove: Move): Move {
-  if (yourMove === Move.R) return Move.P
-  if (yourMove === Move.P) return Move.S
-  if (yourMove === Move.S) return Move.R
-  if (yourMove === Move.D) return Move.W
-  return Move.P
 }
 
 fun randomMove(): Move {

@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b341ef21-ff38-435f-bf51-65c380af6885" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dynamite/MoveMaker.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/dynamite/DioBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dynamite/DioBot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dynamite/DioBotKt$WhenMappings.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/dynamite/DioBotKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dynamite/DioBotKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/dynamite/Guesstimator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/dynamite/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dynamite/Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/runner/BotRunner$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/runner/BotRunner$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dynamite/MarkovChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dynamite/MarkovChain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dynamite/Score.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dynamite/DioBot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dynamite/DioBot.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dynamite/Guesstimator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dynamite/Guesstimator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dynamite/Guesstimator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dynamite/MarkovChain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dynamite/MarkovChain.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dynamite/ScoreKeeper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dynamite/ScoreKeeper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/runner/BotRunner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/runner/BotRunner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/dynamite/AppTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/dynamite/AppTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -34,7 +38,40 @@
     <favorites_list name="dynamite" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/DioBot.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+              <folding>
+                <element signature="e#18#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/ScoreKeeper.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/MoveMaker.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#18#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/runner/BotRunner.kt">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,32 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/DioBot.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-              <folding>
-                <element signature="e#18#118#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/MarkovChain.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/ScoreKeeper.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+            <state relative-caret-position="225">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -131,18 +147,17 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/dynamite/test.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/dynamite/MarkovChainNew.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/runner/BotRunner.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dynamite/Guesstimator.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/dynamite/MarkovChain.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/dynamite/ScoreKeeper.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/dynamite/Guesstimator.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/dynamite/DioBot.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dynamite/MoveMaker.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-227" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -150,6 +165,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,8 +212,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,7 +221,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="file.status.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -326,10 +341,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-227" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911505" weight="0.11022364" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911505" visible="true" weight="0.17238913" />
       <window_info id="Structure" order="1" sideWeight="0.50088495" side_tool="true" weight="0.18210863" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -339,7 +354,7 @@
       <window_info id="JRebel" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.1960396" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.19518073" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -363,41 +378,6 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911505" visible="true" weight="0.11022364" />
-      <window_info id="Structure" order="1" sideWeight="0.50088495" side_tool="true" weight="0.18210863" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50088495" side_tool="true" weight="0.18210863" />
-      <window_info id="JRebel" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.1960396" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32920355" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005325" side_tool="true" weight="0.64257425" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.3283186" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.18118812" />
-      <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.32891566" />
-      <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32970297" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/App.java" />
@@ -431,20 +411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/javarunner-1.0-bot.jar!/com/softwire/dynamite/game/Gamestate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -486,13 +452,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="jar://$PROJECT_DIR$/libs/javarunner-1.0-bot.jar!/com/softwire/dynamite/game/Move.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/MarkovChainNew.kt" />
     <entry file="jar://$PROJECT_DIR$/libs/Dyanmite-Runner-Java.jar!/com/softwire/dynamite/runner/DynamiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -500,6 +459,44 @@
           <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/javarunner-1.0-bot.jar!/com/softwire/dynamite/bot/Bot.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/b8815e48fb45e94821287365bd9ce8623f459ac7/kotlin-stdlib-1.3.21-sources.jar!/kotlin/Arrays.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="80" column="99" lean-forward="true" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="82" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/javarunner-1.0-bot.jar!/com/softwire/dynamite/game/Move.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/javarunner-1.0-bot.jar!/com/softwire/dynamite/game/Gamestate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/Guesstimator.kt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/runner/BotRunner.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -511,36 +508,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/javarunner-1.0-bot.jar!/com/softwire/dynamite/bot/Bot.class">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/ScoreKeeper.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="187">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/ScoreKeeper.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/DioBot.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        <state relative-caret-position="367">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="e#18#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/MarkovChain.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/Guesstimator.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/DioBot.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dynamite/MoveMaker.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#18#118#0" expanded="true" />
+            <element signature="e#18#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
